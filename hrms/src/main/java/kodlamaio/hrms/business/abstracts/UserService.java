@@ -5,5 +5,5 @@ import java.util.List;
 import kodlamaio.hrms.entities.concretes.User;
 
 public interface UserService {
-List<User>geAll();
+List<User>getAll();
 }

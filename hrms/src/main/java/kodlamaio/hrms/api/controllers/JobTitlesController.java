@@ -16,9 +16,17 @@ public class JobTitlesController {
 	@Autowired
 
 	private JobTitleService jobTitleService;
+	
+	@Autowired
+	public JobTitlesController(JobTitleService jobTitleService) {
+		super();
+		this.jobTitleService = jobTitleService;
+	}
+
 
 	@GetMapping("/getall")
 	public List<JobTitle> getAll() {
 		return this.jobTitleService.getAll();
 	}
+	
 }
