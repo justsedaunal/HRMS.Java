@@ -24,5 +24,5 @@ public class HrmsApplication {
 	          .apis(RequestHandlerSelectors.basePackage("kodlamaio.hrms"))              
 	          .paths(PathSelectors.any())                          
 	          .build();                                           
-	    }
+	      }
 }
