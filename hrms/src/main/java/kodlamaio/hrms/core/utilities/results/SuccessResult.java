@@ -7,8 +7,13 @@ public class SuccessResult extends Result{
 		// TODO Auto-generated constructor stub
 	}
 	public SuccessResult(boolean success, String message) {
-		super(true, message);
+		super(success, message);
 		// TODO Auto-generated constructor stub
+	}
+	public SuccessResult(String message) {
+		// TODO Auto-generated constructor stub
+		super(true, message);
+
 	}
 
 

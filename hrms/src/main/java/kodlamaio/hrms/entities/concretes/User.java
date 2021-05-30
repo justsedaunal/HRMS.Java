@@ -12,10 +12,15 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = " users ")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class User {
@@ -36,6 +41,7 @@ public abstract class User {
 	
 	@Column (name="is_active")
 	private boolean is_active;
+	
 	
 
 }

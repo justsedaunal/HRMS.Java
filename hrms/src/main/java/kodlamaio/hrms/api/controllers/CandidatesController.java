@@ -32,9 +32,9 @@ public class CandidatesController {
 	public List<Candidate> getAll() {
 		return this.candidateService.getAll();
 	}
-	@PostMapping("/add")
-	public Result add(@RequestBody Candidate candidate) {
-		return new Result(true, "Kullanıcı eklendi");
+	@PostMapping("/register")
+	public Result registerCandidate(@RequestBody Candidate candidate,String password) {
+		return candidateService.registerCandidate(candidate, password);
 	}
 
 
