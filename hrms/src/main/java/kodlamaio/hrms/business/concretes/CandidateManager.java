@@ -18,7 +18,7 @@ import kodlamaio.hrms.entities.concretes.VerificationCode;
 
 public class CandidateManager implements CandidateService {
 
-	private static final String userDao = null;
+//	private static final String userDao = null;
 	private CandidateDao candidateDao;
     private VerificationCodeService verificationCodeService;
 
